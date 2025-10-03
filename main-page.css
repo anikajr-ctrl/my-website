@@ -1,0 +1,93 @@
+html {
+  background-color: #FADBEF;
+  color: #FF2458;
+}
+
+.container {
+  position: relative;
+  width: fit-content;
+  margin: 225px auto;
+  padding: 50px;
+  overflow: visible
+}
+
+.inside-container {
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 10;
+}
+
+.home-buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.button-wrapper {
+  position: absolute;
+  text-align: center;
+  width: 150px;
+}
+
+.button-wrapper .btn {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.btn-label {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #FF2458;
+  transform: none;
+}
+
+.btn-1 {
+  top: 0px;
+  left: -70px;
+}
+
+.btn-2 {
+  top: 0px;
+  right: -70px;
+}
+
+.btn-3 {
+  bottom: -100px;
+  left: 80px;
+}
+
+.btn-4 {
+  bottom: -100px;
+  right: 100px;
+}
+
+.btn-5 {
+  top: -90px;
+  left: 230px;
+}
+
+.rotate-1 {
+  transform: rotate(-10deg);
+}
+
+.rotate-2 {
+  transform: rotate(15deg);
+}
+
+.rotate-3 {
+  transform: rotate(0deg);
+}
+
+.rotate-4 {
+  transform: rotate(20deg);
+}
+
+.rotate-5 {
+  transform: rotate(10deg) scale(1.2);
+}

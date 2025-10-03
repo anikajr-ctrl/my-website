@@ -1,0 +1,82 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: rgb(149, 182, 102);
+    color: rgb(99, 45, 45);
+}
+
+.clicker {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 120px;
+    height: auto;
+    z-index: 1000;
+    transform: rotate(-30deg);
+}
+
+.scale-outer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    height: 100vh;
+}
+
+.scale-wrapper {
+    transform-origin: top center;
+    width: 1280px;
+    transition: transform 0.2s ease;
+}
+
+@media (max-width: 1280px) {
+    .scale-wrapper {
+        transform: scale(calc(100vw/1280));
+    }
+}
+.lined-paper {
+    background-image: url("lined-paper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 20px 50px 60px 60px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.blog-entry {
+    max-width: 600px;
+    margin: 0 auto;
+    color: rgb(99, 45, 45)
+}
+
+.mean-girls {
+    width: 300px;
+    height: auto;
+}
+
+.corner-deer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 400px;
+    height: auto;
+    z-index: 1000;
+}
+
+.shroom {
+    position: absolute;
+    bottom: 230px;
+    left: 10px;
+    width: 350px;
+    height: auto;
+    z-index: 999;
+}
