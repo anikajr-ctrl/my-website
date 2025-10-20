@@ -22,30 +22,25 @@ html, body {
     justify-content: center;
     align-items: flex-start;
     width: 100vw;
-    height: 100vh;
 }
 
 .scale-wrapper {
-    transform-origin: top center;
-    width: 1280px;
-    transition: transform 0.2s ease;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    transform: none;
 }
 
-@media (max-width: 1280px) {
-    .scale-wrapper {
-        transform: scale(calc(100vw/1280));
-    }
-}
 .lined-paper {
     background-image: url("lined-paper.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 90%;
+    background-size: contain;
+    background-repeat: repeat-y;
+    background-position: top center;
+    width: 100%;
     max-width: 600px;
     height: auto;
     min-height: 100vh;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px 50px 60px 60px;
     border-radius: 10px;
     box-sizing: border-box;
@@ -61,6 +56,22 @@ html, body {
 .mean-girls {
     width: 300px;
     height: auto;
+    display: block;   
+    margin: 10px auto; 
+}
+
+.baby-container {
+    text-align: center; 
+    margin: 20px 0;  
+    display: block;
+}
+
+.baby {
+    max-width: 250px; 
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
 }
 
 .corner-deer {
