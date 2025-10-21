@@ -35,9 +35,14 @@ html {
 }
 
 .button-wrapper .btn {
+  transition: transform 0.3s ease;
   width: 100%;
   height: auto;
   display: block;
+}
+
+.button-wrapper .btn:hover {
+  transform: scale(1.1) translateY(-8px);
 }
 
 .btn-label {
