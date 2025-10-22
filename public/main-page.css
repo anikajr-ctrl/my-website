@@ -87,6 +87,10 @@ html, body {
 
 .btn-5 {
   top: -80px;
-  left: 35%;
   transform: rotate(0deg) scale(1.2);
+}
+
+.button-wrapper.btn-5 {
+  left: 50%;               
+  transform: translateX(-50%);  
 }
