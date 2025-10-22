@@ -1,12 +1,20 @@
-html {
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
   background-color: #FADBEF;
   color: #FF2458;
+  overflow-x: hidden;
 }
 
 .container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   width: fit-content;
-  margin: 225px auto;
+  margin: 0 auto;
   padding: 50px;
   overflow: visible
 }
@@ -22,10 +30,11 @@ html {
 
 .home-buttons {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
 }
 
 .button-wrapper {
@@ -53,28 +62,29 @@ html {
 }
 
 .btn-1 {
-  top: 0px;
-  left: -70px;
+  top: 20px;
+  left: -100px;
 }
 
 .btn-2 {
-  top: 0px;
-  right: -70px;
+  top: 20px;
+  right: -100px;
 }
 
 .btn-3 {
-  bottom: -100px;
-  left: 80px;
+  bottom: -50px;
+  left: -5%;
 }
 
 .btn-4 {
-  bottom: -100px;
-  right: 100px;
+  bottom: -50px;
+  right: -5%;
 }
 
 .btn-5 {
-  top: -90px;
-  left: 230px;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .rotate-1 {
