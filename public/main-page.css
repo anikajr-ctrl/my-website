@@ -37,7 +37,7 @@ html, body {
   transform: translate(-50%, -50%);
 }
 
-.button-wrapper {
+.button-wrapper{
   position: absolute;
   text-align: center;
   width: 150px;
@@ -64,45 +64,29 @@ html, body {
 .btn-1 {
   top: 20px;
   left: -100px;
+  transform: rotate(0deg);
 }
 
 .btn-2 {
   top: 20px;
   right: -100px;
+  transform: rotate(0deg);
 }
 
 .btn-3 {
   bottom: -50px;
   left: -5%;
+  transform: rotate(0deg);
 }
 
 .btn-4 {
   bottom: -50px;
   right: -5%;
+  transform: rotate(0deg);
 }
 
 .btn-5 {
   top: -80px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.rotate-1 {
-  transform: rotate(-10deg);
-}
-
-.rotate-2 {
-  transform: rotate(15deg);
-}
-
-.rotate-3 {
-  transform: rotate(0deg);
-}
-
-.rotate-4 {
-  transform: rotate(20deg);
-}
-
-.rotate-5 {
-  transform: rotate(10deg) scale(1.2);
+  left: 35%;
+  transform: rotate(0deg) scale(1.2);
 }
