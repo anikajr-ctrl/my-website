@@ -74,6 +74,14 @@ html, body {
     margin: 10px auto;
 }
 
+.mycelium {
+  width: 50% !important;      
+  max-width: 500px !important;; 
+  height: auto !important;;     
+  display: block !important;;
+  margin: auto !important;;
+}
+
 .corner-deer {
     position: absolute;
     bottom: 10px;
