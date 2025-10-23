@@ -75,11 +75,11 @@ html, body {
 }
 
 .mycelium {
-  width: 50% !important;      
-  max-width: 500px !important;; 
-  height: auto !important;;     
-  display: block !important;;
-  margin: auto !important;;
+  width: 30%;     
+  max-width: 500px;
+  height: auto;    
+  display: block; 
+  margin: auto; 
 }
 
 .corner-deer {
