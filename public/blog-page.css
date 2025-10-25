@@ -82,6 +82,14 @@ html, body {
   margin: auto; 
 }
 
+.rocky-horror{
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    display: block; 
+    margin: auto;
+}
+
 .corner-deer {
     position: absolute;
     bottom: 10px;
