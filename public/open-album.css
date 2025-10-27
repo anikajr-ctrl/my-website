@@ -1,0 +1,115 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    background-image: url('background-lace.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*container that holds the album background and pages*/
+.album-container {
+    position: relative;
+    width: 1000px;
+    max-width: 90%;
+}
+
+/*open album background*/
+.open-album {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.6s ease;
+    transform-origin: center;
+}
+
+/*hide radio buttons*/
+.album-container input {
+    display: none;
+}
+
+/*page wrapper*/
+.pages {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/*each page*/
+.page {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*show page when radio is checked*/
+#page1:checked ~ .pages #content1,
+#page2:checked ~ .pages #content2,
+#page3:checked ~ .pages #content3,
+#page4:checked ~ .pages #content4,
+#page5:checked ~ .pages #content5,
+#page6:checked ~ .pages #content6,
+#page7:checked ~ .pages #content7,
+#page8:checked ~ .pages #content8 {
+    display: flex;
+}
+
+/*images inside the album*/
+.page img {
+    width: 48%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/*pages with 2 images*/
+.two-image-page {
+    margin-top: 20px;
+}
+
+.page img:hover {
+    transform: scale(1.05);
+}
+
+/*arrows for page flipping*/
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 48px;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.arrow:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}

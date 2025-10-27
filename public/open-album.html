@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <link rel="stylesheet" href="open-album.css">
+</head>
+
+<body>
+    <div class="album-container">
+        <img src="open-album.PNG" class="open-album">
+
+            <!--radio buttons for page switching-->
+            <input type="radio" id="page1" name="page" checked>
+            <input type="radio" id="page2" name="page">
+            <input type="radio" id="page3" name="page">
+            <input type="radio" id="page4" name="page">
+            <input type="radio" id="page5" name="page">
+            <input type="radio" id="page6" name="page">
+            <input type="radio" id="page7" name="page">
+            <input type="radio" id="page8" name="page">
+
+                <!--arrows for navigation-->
+                <div class="arrow left" id="arrow-left">&#8592;</div>
+                <div class="arrow right" id="arrow-right">&#8594;</div>
+
+                <!--pages-->
+                <div class="pages">
+                    <div class="page" id="content1">
+                        <img src="https://files.catbox.moe/o46luy.JPG">
+                        <img src="https://files.catbox.moe/syuaqx.JPG">
+                        <img src="https://files.catbox.moe/vjwi07.JPG">
+                        <img src="https://files.catbox.moe/wivgs1.JPG">
+                    </div>
+
+                    <div class="page" id="content2">
+                        <img src="https://files.catbox.moe/yslda2.JPG">
+                        <img src="https://files.catbox.moe/myz8k0.JPG">
+                        <img src="https://files.catbox.moe/18qdjb.JPG">
+                        <img src="https://files.catbox.moe/iiw1s2.JPG">
+                    </div>
+
+                    <div class="page" id="content3">
+                        <img src="https://files.catbox.moe/w8b1x0.JPG">
+                        <img src="https://files.catbox.moe/8wqpry.jpg">
+                        <img src="https://files.catbox.moe/kkjmu3.JPG">
+                        <img src="https://files.catbox.moe/4y7lcn.JPG">
+                    </div>
+
+                    <div class="page two-image-page" id="content4">
+                        <img src="https://files.catbox.moe/hmu4n0.JPG">
+                        <img src="https://files.catbox.moe/ukcf8q.JPG">
+                    </div>
+
+                    <div class="page" id="content5">
+                        <img src="https://files.catbox.moe/zy0oma.JPG">
+                        <img src="https://files.catbox.moe/c2efhs.JPG">
+                        <img src="https://files.catbox.moe/741bma.JPG">
+                        <img src="https://files.catbox.moe/fxpjt1.JPG">
+                    </div>
+
+                    <div class="page two-image-page" id="content6">
+                        <img src="https://files.catbox.moe/zioam1.JPEG">
+                        <img src="https://files.catbox.moe/4cpkop.JPG">
+                    </div>
+
+                    <div class="page" id="content7">
+                        <img src="https://files.catbox.moe/6matmc.JPG">
+                        <img src="https://files.catbox.moe/ck2sb6.JPG">
+                        <img src="https://files.catbox.moe/2tt3ry.JPG">
+                        <img src="https://files.catbox.moe/qwf0ck.JPG">
+                    </div>
+
+                    <div class="page two-image-page" id="content8">
+                        <img src="https://files.catbox.moe/i3j0wk.JPG">
+                        <img src="https://files.catbox.moe/4ts6xo.JPG">
+                    </div>
+
+                </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        const pages = ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'];
+        const leftArrow = document.getElementById('arrow-left');
+        const rightArrow = document.getElementById('arrow-right');
+
+        leftArrow.addEventListener('click', () => {
+            let current = pages.findIndex(id => document.getElementById(id).checked);
+            let prev = (current - 1 + pages.length) % pages.length;
+            document.getElementById(pages[prev]).checked = true;
+        });
+
+        rightArrow.addEventListener('click', () => {
+            let current = pages.findIndex(id => document.getElementById(id).checked);
+            let next = (current + 1) % pages.length;
+            document.getElementById(pages[next]).checked = true;
+        });
+    </script>
+
+</body>
+
+</html>
