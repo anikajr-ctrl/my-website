@@ -66,7 +66,12 @@ html, body {
 #page5:checked ~ .pages #content5,
 #page6:checked ~ .pages #content6,
 #page7:checked ~ .pages #content7,
-#page8:checked ~ .pages #content8 {
+#page8:checked ~ .pages #content8,
+#page9:checked ~ .pages #content9,
+#page10:checked ~ .pages #content10,
+#page11:checked ~ .pages #content11,
+#page12:checked ~ .pages #content12,
+#page13:checked ~ .pages #content13 {
     display: flex;
 }
 
