@@ -136,6 +136,13 @@ html, body {
   margin: 0 auto;
 }
 
+.cat-aquarium {
+  display: block;
+  margin: 0px auto;
+  max-width: 100%;
+  height: auto;
+}
+
 .spores-fan {
   height: auto;  
   width: 250px;     
