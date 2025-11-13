@@ -121,7 +121,7 @@ a:hover {
 }
 
 .red-mush4 {
-    height: auto;  
+  height: auto;  
   width: 300px;     
   display: block;      
   margin: 0 auto;
@@ -149,6 +149,13 @@ a:hover {
 }
 
 .spores-fan {
+  height: auto;  
+  width: 250px;     
+  display: block;      
+  margin: 0 auto;
+}
+
+.short-hair-baby-me {
   height: auto;  
   width: 250px;     
   display: block;      
