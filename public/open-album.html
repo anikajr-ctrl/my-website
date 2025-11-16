@@ -262,6 +262,35 @@
         });
     </script>
 
+<div id="album-lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img id="album-lightbox-img" src="">
+</div>
+
+<script>
+  // Your JS code for lightbox goes here
+  document.querySelectorAll('.page img').forEach(img => {
+      img.addEventListener('click', () => {
+          const lightbox = document.getElementById("album-lightbox");
+          const lightboxImg = document.getElementById("album-lightbox-img");
+
+          lightboxImg.src = img.src;
+          lightbox.style.display = "flex";
+      });
+  });
+
+  document.querySelector('#album-lightbox .close').addEventListener('click', () => {
+      document.getElementById("album-lightbox").style.display = "none";
+  });
+
+  document.getElementById("album-lightbox").addEventListener('click', (e) => {
+      if (e.target.id === "album-lightbox") {
+          e.target.style.display = "none";
+      }
+  });
+</script>
+
 </body>
+
 
 </html>
