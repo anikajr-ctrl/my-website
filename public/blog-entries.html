@@ -19,6 +19,31 @@
                 
                 <p>
                 
+                <strong>saturday, november 15th<br>
+                5:32pm</strong>
+                <br><br>
+                yesterday i had my second math midterm, and i think i did pretty good. don’t wanna jinx it but… that’s the
+                truth.<br>
+                this morning i dropped tor off at band practice and i made a detour to the bog to ponder in the peaceful 
+                silence. much needed after last nights events (moshing too hard in the jazz pit, and falling on my ass not
+                once, but twice). i took many a photo on my digi cam of the different mosses and plants. i told myself this
+                would count for me studying for my plant ID exam, but i don’t know how truly beneficial that was.<br>
+                <div class="bog-grid">
+                    <img loading="lazy" src="https://files.catbox.moe/hb93ie.JPG" class="bog-zoom">
+                    <img loading="lazy" src="https://files.catbox.moe/85kron.jpg" class="bog-zoom"> 
+                    <img loading="lazy" src="https://files.catbox.moe/9biye5.JPG" class="bog-zoom"> 
+                    <img loading="lazy" src="https://files.catbox.moe/hlgyk6.JPG" class="bog-zoom">
+                </div>
+                i came back home and made this roasted potato and garlic soup, with homemade croutons. was pretty good, just
+                took way longer than i expected it to, and i would tweak a few things if i were to make it again.<br>
+                now it’s already dark outside, and i desperately need to finish memorizing the 54 indicator plants that i need
+                to know by thursday AHHHHHH!!!!!<br>
+                was a really good day. i’m grateful for friends, dancing, live music, and pick-me-up pizza after a successful
+                mosh. i’m happyyyy yippeeee!
+                <br><br>
+
+
+
                 <strong>wednesday, november 12th<br>
                 8:27pm</strong>
                 <br><br>
@@ -303,5 +328,34 @@
 </div>
 
     </body>
-    
+
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="">
+</div>
+
+<script>
+document.querySelectorAll('.bog-zoom').forEach(img => {
+    img.addEventListener('click', () => {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+
+        lightboxImg.src = img.src;
+        lightbox.style.display = "flex";
+    });
+});
+
+document.querySelector('.lightbox .close').addEventListener('click', () => {
+    document.getElementById("lightbox").style.display = "none";
+});
+
+// Optional: close popup when clicking outside the image
+document.getElementById("lightbox").addEventListener('click', (e) => {
+    if (e.target.id === "lightbox") {
+        e.target.style.display = "none";
+    }
+});
+</script>
+
+
 </html>
