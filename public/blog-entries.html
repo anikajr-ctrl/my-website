@@ -19,7 +19,7 @@
                 
                 <p>
                 
-                <strong>saturday, december 6th
+                <strong>saturday, december 6th<br>
                 6:06pm</strong>
                 <br><br>
 
@@ -34,7 +34,7 @@
                 <br><br>
                 p.p.s. ben invited me to go back to hornby next summer (THANK U BEN!!!)
                 <br><br>
-                <img loading lazy src="https://files.catbox.moe/n9n7dw.jpg" class="selfie-scarf">
+                <img loading ="lazy" src="https://files.catbox.moe/n9n7dw.jpg" class="selfie-scarf click-zoom">
                 <br><br>
 
                 <strong>wednesday, november 26th<br>
@@ -90,7 +90,7 @@
                 probably about eating feta cheese straight from the container tbh. <br>
                 i miss her.
                 <br><br>
-                <img loading="lazy" src="https://files.catbox.moe/z3u919.JPEG" class="short-hair-baby-me">
+                <img loading="lazy" src="https://files.catbox.moe/z3u919.JPEG" class="short-hair-baby-me click-zoom">
                 <br><br>
 
                 <strong>sunday, november 9th <img loading="lazy" src="https://files.catbox.moe/inenjf.gif"> <br>
@@ -173,7 +173,8 @@
                 <br> 11:20am
                 </strong>
                 <br><br>
-                HAPPY HALLOWEENNNNIE!!!<img loading="lazy" src="jackolantern.gif"> <img loading="lazy" src="pumpkin18.gif"> <img loading="lazy" src="271.gif"> <br><br>
+                HAPPY HALLOWEENNNNIE!!!<img loading="lazy" src="jackolantern.gif"> <img loading="lazy" src="pumpkin18.gif">
+                 <img loading="lazy" src="271.gif"> <br><br>
 
                 in honour of today i wanna talk about my favourite things ever that i think about at least a few 
                 times a year: ispy spooky mansion. <br>
@@ -216,15 +217,15 @@
                 <br>
                 look here for today's find:
                 <br><br>
-                <img loading="lazy" src="https://files.catbox.moe/j8knyj.JPG" class="red-mush1">
+                <img loading="lazy" src="https://files.catbox.moe/j8knyj.JPG" class="red-mush1 click-zoom">
                 <br>
-                <img loading="lazy" src="https://files.catbox.moe/wivgs1.JPG" class="red-mush2">
+                <img loading="lazy" src="https://files.catbox.moe/wivgs1.JPG" class="red-mush2 click-zoom">
                 <br>
-                <img loading="lazy" src="https://files.catbox.moe/es1ihf.JPG" class="red-mush3">
+                <img loading="lazy" src="https://files.catbox.moe/es1ihf.JPG" class="red-mush3 click-zoom">
                 <br>
-                <img loading="lazy" src="https://files.catbox.moe/4a9o7p.JPG" class="red-mush4">
+                <img loading="lazy" src="https://files.catbox.moe/4a9o7p.JPG" class="red-mush4 click-zoom">
                 <br>
-                <img loading="lazy" src="https://files.catbox.moe/x8ylqg.JPG" class="red-mush5">
+                <img loading="lazy" src="https://files.catbox.moe/x8ylqg.JPG" class="red-mush5 click-zoom">
                 <br><br>
     
                 <strong>saturday, october 25th
@@ -317,7 +318,7 @@
                 check out this lil graphic i made:
                 <br><br>
                     <div class="baby-container">
-                        <img loading="lazy" src="baby.PNG" class="baby">
+                        <img loading="lazy" src="baby.PNG" class="baby click-zoom">
                     </div>
                 <br>
 
@@ -358,8 +359,6 @@
     
 </div>
 
-    </body>
-
 <div id="lightbox" class="lightbox">
     <span class="close">&times;</span>
     <img id="lightbox-img" src="">
@@ -380,13 +379,31 @@ document.querySelector('.lightbox .close').addEventListener('click', () => {
     document.getElementById("lightbox").style.display = "none";
 });
 
-// Optional: close popup when clicking outside the image
 document.getElementById("lightbox").addEventListener('click', (e) => {
     if (e.target.id === "lightbox") {
         e.target.style.display = "none";
     }
 });
 </script>
+
+<script>
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".lightbox .close");
+
+    document.querySelectorAll("img.click-zoom").forEach(img => {
+    img.addEventListener("click", () => {
+    lightboxImg.src = img.src;
+    lightbox.style.display = "flex";
+        });
+        });
+
+    closeBtn.addEventListener("click", () => {
+        lightbox.style.display = "none";
+    });
+</script>
+
+</body>
 
 
 </html>
