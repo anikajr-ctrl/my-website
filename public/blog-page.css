@@ -212,6 +212,13 @@ a:hover {
   cursor: pointer;
 }
 
+.selfie-scarf {
+  height: auto;  
+  width: 350px;     
+  display: block;      
+  margin: 0 auto;
+}
+
 .corner-deer {
     position: absolute;
     bottom: 10px;
