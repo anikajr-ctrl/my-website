@@ -22,8 +22,20 @@ a:hover {
     left: 10px;
     width: 120px;
     height: auto;
-    z-index: 1000;
-    transform: rotate(-30deg);
+    z-index: 3000;
+    transition: transform 0.35s ease;
+    pointer-events: auto;
+}
+
+.clicker:hover {
+  transform: translateX(-4px) rotate(-2deg);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .clicker {
+        display: none;
+    }
 }
 
 .scale-outer {
@@ -38,6 +50,48 @@ a:hover {
     max-width: 1280px;
     margin: 0 auto;
     transform: none;
+    position: relative;
+    min-height: 100vh;
+}
+
+.gif-decorations {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2000;
+  display: block;
+}
+
+.gif-decorations img {
+  pointer-events: auto;
+  position: absolute;
+}
+
+.corner-deer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 400px;
+    height: auto;
+    z-index: 1000;
+}
+
+.shroom {
+    position: absolute;
+    bottom: 230px;
+    left: 10px;
+    width: 350px;
+    height: auto;
+    z-index: 999;
+}
+
+@media (max-width: 768px) {
+    .gif-decorations {
+        display: none;
+    }
 }
 
 .lined-paper {
@@ -219,20 +273,9 @@ a:hover {
   margin: 0 auto;
 }
 
-.corner-deer {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    width: 400px;
-    height: auto;
-    z-index: 1000;
-}
-
-.shroom {
-    position: absolute;
-    bottom: 230px;
-    left: 10px;
-    width: 350px;
-    height: auto;
-    z-index: 999;
+.olivia-puppy {
+  height: auto;  
+  width: 350px;     
+  display: block;      
+  margin: 0 auto;
 }
