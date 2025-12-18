@@ -12,8 +12,15 @@ html, body {
     background-position: center;
 }
 
-a:hover {
-  cursor: url('cat-cursor.gif'), pointer;
+a:hover,
+button:hover,
+[onclick]:hover,
+img:hover {
+    cursor: url('cat-cursor.gif'), pointer !important;
+}
+
+.clicker:hover {
+    cursor: url('cat-cursor.gif'), pointer;
 }
 
 .clicker {

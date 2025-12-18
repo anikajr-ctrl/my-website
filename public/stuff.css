@@ -12,8 +12,13 @@ html, body {
     background-position: center;
 }
 
-a:hover {
-  cursor: url('cat-cursor.gif'), pointer;
+a:hover,
+button:hover,
+[onclick]:hover,
+img[onclick]:hover,
+.clicker:hover,
+.wallets-container img:hover {
+    cursor: url('cat-cursor.gif'), pointer !important;
 }
 
 .clicker {
