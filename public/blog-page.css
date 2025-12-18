@@ -88,6 +88,15 @@ a:hover {
     z-index: 999;
 }
 
+.me-n-mum-computer {
+   position: absolute;
+    bottom: 290px;
+    right: -5px;
+    width: 300px;
+    height: auto;
+    z-index: 1000;
+}
+
 @media (max-width: 768px) {
     .gif-decorations {
         display: none;
