@@ -1,0 +1,109 @@
+html, body {
+    cursor: url('pix495.gif'), auto;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: rgb(149, 182, 102);
+    color: rgb(99, 45, 45); 
+    background-image: url('deer_fawn\ print.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+a:hover {
+  cursor: url('cat-cursor.gif'), pointer;
+}
+
+.clicker {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 120px;
+    height: auto;
+    z-index: 3000;
+    transition: transform 0.35s ease;
+    pointer-events: auto;
+}
+
+.clicker:hover {
+  transform: translateX(-4px) rotate(-2deg);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .clicker {
+        display: none;
+    }
+}
+
+.white-lace-border-container {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.white-lace-border {
+    width: 100%;
+    display: block;
+}
+
+.wallets-container {
+   position: absolute;
+    inset: 0;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: min-content;  
+    gap: 2px;                     
+
+    width: 85%;
+    justify-content: center;       
+    align-content: center;         
+
+    font-size: 0;                 
+    line-height: 0;                
+    z-index: 2;
+}
+
+.wallets-container img {
+   display: block;
+    width: 100%;        
+    height: auto;       
+    margin: 0;
+    padding: 0;
+    border: 0;
+    object-fit: contain;
+}
+
+.wallets-container img:hover {
+    transform: scale(1.08); 
+}
+
+.lightbox {
+    display: none;          
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8); 
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 8px;
+    box-shadow: none; 
+}
+
+.lightbox img:hover {
+    transform: scale(1.05) rotate(-2deg) translateY(-5px);
+    cursor: pointer;
+}

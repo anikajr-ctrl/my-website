@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stuff</title>
+    <link rel="stylesheet" href="stuff.css">
+</head>
+
+<body>
+    <a href="index.html">
+        <img src="back-door.png" class="clicker">
+    </a>
+
+    <!--white lace border container-->
+    <div class="white-lace-border-container">
+        <img src="white-lace-border.png" class="white-lace-border">
+
+        <!--closed alteoid wallets-->
+        <div class="wallets-container">
+            <img loading="lazy" src="https://files.catbox.moe/p0r2cs.png" class="ev-wallet">
+            <img loading="lazy" src="https://files.catbox.moe/c8fnzx.png" class="ry-wallet">
+            <img loading="lazy" src="https://files.catbox.moe/czc56b.png" class="ben-wallet">
+            <img loading="lazy" src="https://files.catbox.moe/traoek.png" class="chloe-wallet">
+            <img loading="lazy" src="https://files.catbox.moe/1i64j7.png" class="emma-wallet">
+            <img loading="lazy" src="https://files.catbox.moe/xwpw4b.png" class="hana-wallet">
+        </div>
+
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+        <img id="closed-wallet" src="" alt="closed wallet">
+    </div>
+
+    <script>
+        const wallets = document.querySelectorAll('.wallets-container img');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('closed-wallet');
+
+        
+        const walletVariants = {
+            'p0r2cs.png': ['https://files.catbox.moe/p0r2cs.png', 'https://files.catbox.moe/3mfce0.png'],
+            'c8fnzx.png': ['https://files.catbox.moe/c8fnzx.png', 'https://files.catbox.moe/jpoe0c.png'],
+            'czc56b.png': ['https://files.catbox.moe/czc56b.png', 'https://files.catbox.moe/qg60o9.png'],
+            'traoek.png': ['https://files.catbox.moe/traoek.png', 'https://files.catbox.moe/1vf5a3.png'],
+            '1i64j7.png': ['https://files.catbox.moe/1i64j7.png', 'https://files.catbox.moe/klbk98.png'],
+            'xwpw4b.png': ['https://files.catbox.moe/xwpw4b.png', 'https://files.catbox.moe/p44gcq.png'],
+        };
+
+        let currentVariants = [];
+        let currentIndex = 0;
+
+        wallets.forEach(wallet => {
+            wallet.addEventListener('click', () => {
+                const filename = wallet.src.split('/').pop(); 
+                currentVariants = walletVariants[filename] || [wallet.src];
+                currentIndex = 0;
+                lightboxImg.src = currentVariants[currentIndex];
+                lightbox.style.display = 'flex';
+            });
+        });
+
+        lightboxImg.addEventListener('click', (e) => {
+            e.stopPropagation(); 
+            currentIndex = (currentIndex + 1) % currentVariants.length;
+            lightboxImg.src = currentVariants[currentIndex];
+        });
+
+        function closeLightbox(e) {
+            if(e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        }
+    </script>
+
+
+</body>
