@@ -295,3 +295,10 @@ img:hover {
   display: block;      
   margin: 0 auto;
 }
+
+.smosh {
+  height: auto;  
+  width: 170px;     
+  display: block;      
+  margin: 0 auto;
+}
