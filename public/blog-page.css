@@ -298,7 +298,14 @@ img:hover {
 
 .smosh {
   height: auto;  
-  width: 170px;     
+  width: 250px;     
+  display: block;      
+  margin: 0 auto;
+}
+
+.santa-2008 {
+  height: auto;  
+  width: 250px;     
   display: block;      
   margin: 0 auto;
 }
