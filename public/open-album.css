@@ -115,7 +115,8 @@ a:hover,
 #page25:checked ~ .pages #content25,
 #page26:checked ~ .pages #content26,
 #page27:checked ~ .pages #content27,
-#page28:checked ~ .pages #content28 {
+#page28:checked ~ .pages #content28, 
+#page29:checked ~ .pages #content29 {
     display: flex;
 }
 
