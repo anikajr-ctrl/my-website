@@ -345,3 +345,25 @@ img:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
+
+.foggy-day-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.foggy-day-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.foggy-day-grid img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
