@@ -346,24 +346,51 @@ img:hover {
   cursor: pointer;
 }
 
-.foggy-day-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.foggy-park-grid {
+  display: flex;
   gap: 10px;
+  justify-content: flex-start;
+  overflow-x: auto;
   width: 100%;
   max-width: 600px;
   margin: 20px auto;
 }
 
-.foggy-day-grid img {
-  width: 100%;
-  height: auto;
+.foggy-park-grid img {
+  flex: 0 0 auto;
+  width: auto;
+  height: 300px;
   object-fit: cover;
-  max-width: 300px;
+  max-width: 350px;
   transition: transform 0.3s ease;
 }
 
-.foggy-day-grid img:hover {
+.foggy-park-grid img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
+.room-grid {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  overflow-x: auto;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.room-grid img {
+  flex: 0 0 auto;
+  width: auto;
+  height: 300px;
+  object-fit: cover;
+  max-width: 350px;
+  transition: transform 0.3s ease;
+}
+
+.room-grid img:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
