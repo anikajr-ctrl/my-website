@@ -95,15 +95,6 @@ img:hover {
     z-index: 999;
 }
 
-.me-n-mum-computer {
-   position: absolute;
-    bottom: 290px;
-    right: -5px;
-    width: 300px;
-    height: auto;
-    z-index: 1000;
-}
-
 @media (max-width: 768px) {
     .gif-decorations {
         display: none;
@@ -393,4 +384,35 @@ img:hover {
 .room-grid img:hover {
   transform: scale(1.05);
   cursor: pointer;
+}
+
+.this-weekend-grid {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  overflow-x: auto;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.this-weekend-grid img {
+  flex: 0 0 auto;
+  width: auto;
+  height: 300px;
+  object-fit: cover;
+  max-width: 350px;
+  transition: transform 0.3s ease;
+}
+
+.this-weekend-grid img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.club-penguin-dance {
+  height: auto;  
+  width: 100px;     
+  display: block;      
+  margin: 0 auto;
 }
