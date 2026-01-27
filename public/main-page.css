@@ -4,12 +4,32 @@ html, body {
   padding: 0;
   height: 100%;
   background-color: #FADBEF;
-  color: #FF2458;
+  color: #ffffff;
+  text-shadow:
+  0 0 4px  rgba(255, 255, 255, 0.8),
+  0 0 8px  rgba(255, 255, 255, 0.6),
+  0 0 16px rgba(255, 255, 255, 0.5);
   overflow-x: hidden;
+  background-image: url('welcome-to-the-bog.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 a:hover {
   cursor: url('cat-cursor.gif'), pointer;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow:
+    0 0 6px  #fff,
+    0 0 16px #fff,
+    0 0 32px #fff;
+  line-height: 1.1;
+  margin-bottom: 40px;
 }
 
 .container {
@@ -49,7 +69,10 @@ a:hover {
 }
 
 .button-wrapper .btn {
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 0 6px #fff)
+          drop-shadow(0 0 12px #fff)
+          drop-shadow(0 0 24px #fff);
   width: 100%;
   height: auto;
   display: block;
@@ -61,9 +84,16 @@ a:hover {
 
 .btn-label {
   margin-top: 5px;
-  font-size: 16px;
-  color: #FF2458;
+  font-size: 27px;
+  color: #ffffff;
   transform: none;
+  text-shadow:
+    0 0 6px  #fff,
+    0 0 12px #fff,
+    0 0 24px #fff,
+    0 0 40px #fff,
+    0 0 60px #fff; 
+  transition: text-shadow 0.3s ease;
 }
 
 .btn-1 {
