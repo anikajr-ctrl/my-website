@@ -19,43 +19,20 @@
     <div class="album-container">
         <img src="open-album.PNG" class="open-album">
 
-            <!--radio buttons for page switching-->
-            <input type="radio" id="page1" name="page" checked>
-            <input type="radio" id="page2" name="page">
-            <input type="radio" id="page3" name="page">
-            <input type="radio" id="page4" name="page">
-            <input type="radio" id="page5" name="page">
-            <input type="radio" id="page6" name="page">
-            <input type="radio" id="page7" name="page">
-            <input type="radio" id="page8" name="page">
-            <input type="radio" id="page9" name="page">
-            <input type="radio" id="page10" name="page">
-            <input type="radio" id="page11" name="page">
-            <input type="radio" id="page12" name="page">
-            <input type="radio" id="page13" name="page">
-            <input type="radio" id="page14" name="page">
-            <input type="radio" id="page15" name="page">
-            <input type="radio" id="page16" name="page">
-            <input type="radio" id="page17" name="page">
-            <input type="radio" id="page18" name="page">
-            <input type="radio" id="page19" name="page">
-            <input type="radio" id="page20" name="page">
-            <input type="radio" id="page21" name="page">
-            <input type="radio" id="page22" name="page">
-            <input type="radio" id="page23" name="page">
-            <input type="radio" id="page24" name="page">
-            <input type="radio" id="page25" name="page">
-            <input type="radio" id="page26" name="page">
-            <input type="radio" id="page27" name="page">
-            <input type="radio" id="page28" name="page">
-            <input type="radio" id="page29" name="page">
-
                 <!--arrows for navigation-->
                 <div class="arrow left" id="arrow-left">&#8592;</div>
                 <div class="arrow right" id="arrow-right">&#8594;</div>
 
                 <!--pages-->
                 <div class="pages">
+
+                    <div class="page active" id="content30">
+                        <img src="IMG_2329.JPG">
+                        <img src="IMG_2216.JPG">
+                        <img src="IMG_2371.JPG">
+                        <img src="IMG_2347.JPG">
+                    </div>
+
                     <div class="page" id="content1">
                         <img src="https://files.catbox.moe/0nuusm.JPG">
                         <img src="https://files.catbox.moe/aq4ewk.JPG">
@@ -249,60 +226,59 @@
 
     </div>
 
+    <!-- lightbox -->
+    <div id="album-lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img id="album-lightbox-img">
+    </div>
+
     <script>
-        const pages = ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 
-        'page8', 'page9', 'page10', 'page11', 'page12', 'page13', 'page14', 'page15', 
-        'page16', 'page17', 'page18', 'page19', 'page20', 'page21', 'page22', 'page23',
-        'page24', 'page25', 'page26', 'page27', 'page28', 'page29'];
-        const leftArrow = document.getElementById('arrow-left');
-        const rightArrow = document.getElementById('arrow-right');
+        // page flipping
+        const pages = document.querySelectorAll('.page');
+        let currentIndex = 0;
+
+        const leftArrow = document.querySelector('.arrow.left');
+        const rightArrow = document.querySelector('.arrow.right');
+
+        function showPage(index) {
+            pages[currentIndex].classList.remove('active');
+            pages[index].classList.add('active');
+            currentIndex = index;
+        }
 
         leftArrow.addEventListener('click', () => {
-            let current = pages.findIndex(id => document.getElementById(id).checked);
-            let prev = (current - 1 + pages.length) % pages.length;
-            document.getElementById(pages[prev]).checked = true;
+            showPage((currentIndex - 1 + pages.length) % pages.length);
         });
 
         rightArrow.addEventListener('click', () => {
-            let current = pages.findIndex(id => document.getElementById(id).checked);
-            let next = (current + 1) % pages.length;
-            document.getElementById(pages[next]).checked = true;
+            showPage((currentIndex + 1) % pages.length);
+        });
+
+        // lightbox functionality
+        const lightbox = document.getElementById("album-lightbox");
+        const lightboxImg = document.getElementById("album-lightbox-img");
+        const closeBtn = lightbox.querySelector(".close");
+
+        // open lightbox when any page image is clicked
+        document.querySelectorAll('.page img').forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightbox.style.display = "flex";
+            });
+        });
+
+        // close lightbox on "×" click
+        closeBtn.addEventListener('click', () => {
+            lightbox.style.display = "none";
+        });
+
+        // close lightbox when clicking outside the image
+        lightbox.addEventListener('click', e => {
+            if (e.target === lightbox) {
+                lightbox.style.display = "none";
+            }
         });
     </script>
-
-    <script>
-        document.querySelectorAll('.pages img').forEach(img => {
-            img.setAttribute('loading', 'lazy');
-        });
-    </script>
-
-<div id="album-lightbox" class="lightbox">
-    <span class="close">&times;</span>
-    <img id="album-lightbox-img" src="">
-</div>
-
-<script>
-  // Your JS code for lightbox goes here
-  document.querySelectorAll('.page img').forEach(img => {
-      img.addEventListener('click', () => {
-          const lightbox = document.getElementById("album-lightbox");
-          const lightboxImg = document.getElementById("album-lightbox-img");
-
-          lightboxImg.src = img.src;
-          lightbox.style.display = "flex";
-      });
-  });
-
-  document.querySelector('#album-lightbox .close').addEventListener('click', () => {
-      document.getElementById("album-lightbox").style.display = "none";
-  });
-
-  document.getElementById("album-lightbox").addEventListener('click', (e) => {
-      if (e.target.id === "album-lightbox") {
-          e.target.style.display = "none";
-      }
-  });
-</script>
 
 </body>
 
