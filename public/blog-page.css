@@ -430,3 +430,27 @@ img:hover {
   display: block;      
   margin: 0 auto;
 }
+
+.tofino-grid {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  overflow-x: auto;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.tofino-grid img {
+  flex: 0 0 auto;
+  width: auto;
+  height: 300px;
+  object-fit: cover;
+  max-width: 350px;
+  transition: transform 0.3s ease;
+}
+
+.tofino-grid img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
