@@ -160,47 +160,31 @@ img:hover {
     margin: auto;
 }
 
-.red-mush1 {
-    height: auto;  
-  width: 300px;     
-  display: block;      
-  margin: 0 auto;
+
+.mushroom-grid {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  overflow-x: auto;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
 }
 
-.red-mush2 {
-    height: auto;  
-  width: 300px;     
-  display: block;      
-  margin: 0 auto;
+.mushroom-grid img {
+  flex: 0 0 auto;
+  width: auto;
+  height: 300px;
+  object-fit: cover;
+  max-width: 350px;
+  transition: transform 0.3s ease;
 }
 
-.red-mush3 {
-    height: auto;  
-  width: 300px;     
-  display: block;      
-  margin: 0 auto;
+.mushroom-grid img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
-.red-mush4 {
-  height: auto;  
-  width: 300px;     
-  display: block;      
-  margin: 0 auto;
-}
-
-.red-mush5 {
-    height: auto;  
-  width: 300px;     
-  display: block;      
-  margin: 0 auto;
-}
-
-.red-mush6 {
-    height: auto;  
-  width: 300px;     
-  display: block;      
-  margin: 0 auto;
-}
 
 .cat-aquarium {
   display: block;
@@ -304,13 +288,6 @@ img:hover {
 .punk-kitty {
   height: auto;  
   width: 300px;     
-  display: block;      
-  margin: 0 auto;
-}
-
-.zbday {
-  height: auto;  
-  width: 250px;     
   display: block;      
   margin: 0 auto;
 }
