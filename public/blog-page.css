@@ -431,3 +431,10 @@ img:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
+
+.snake-gif {
+  height: auto;  
+  width: 180px;     
+  display: block;      
+  margin: 0 auto;
+}
