@@ -438,3 +438,20 @@ img:hover {
   display: block;      
   margin: 0 auto;
 }
+
+.irish-pin-column {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.irish-pin-column img {
+  width: 40%;
+  max-width: 200px;
+  height: auto;
+}
+
+.irish-pin-column img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
