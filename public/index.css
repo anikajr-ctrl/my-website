@@ -1,0 +1,53 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #FADBEF;
+  cursor: url('pix495.gif'), auto;
+  color: #fff;
+  text-shadow: 
+    0 0 4px rgba(255,255,255,0.8),
+    0 0 8px rgba(255,255,255,0.6),
+    0 0 16px rgba(255,255,255,0.5);
+}
+
+a:hover {
+  cursor: url('cat-cursor.gif'), pointer;
+}
+
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('background-image.JPG');
+  background-size: cover;      
+  background-repeat: no-repeat;
+  background-position: center; 
+  overflow: hidden;
+}
+
+.owl-button-wrapper {
+  position: absolute;
+  top: 65%;    
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.owl-enter-button {
+  width: 200px;
+  height: auto;
+}
+
+.text-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  text-align: center;
+  text-shadow:
+    0 0 6px #fff,
+    0 0 12px #fff,
+    0 0 24px #fff;
+}
