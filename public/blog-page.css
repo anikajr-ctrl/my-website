@@ -456,3 +456,10 @@ img:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
+
+.chloe-birthday {
+  height: auto;  
+  width: 250px;     
+  display: block;      
+  margin: 0 auto;
+}
