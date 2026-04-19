@@ -463,3 +463,10 @@ img:hover {
   display: block;      
   margin: 0 auto;
 }
+
+.magnolia {
+  height: auto;  
+  width: 250px;     
+  display: block;      
+  margin: 0 auto;
+}
