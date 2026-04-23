@@ -5,6 +5,7 @@ html, body {
   height: 100%;
   background-color: #FADBEF;
   color: #462218;
+  font-family: monospace;
   overflow-x: hidden;
   background-image: url('home-background.png');
   background-size: cover;
@@ -35,7 +36,7 @@ a:hover {
   align-items: center;
   gap: 5px;                  
   text-decoration: none;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: monospace;
   color: #462218;
   text-align: left; 
   width: 200px;  
@@ -60,11 +61,11 @@ a:hover {
 }
 
 .home-title {
-  font-size: 40px;
-  margin-bottom: -20px;
-  margin-top: 80px;
+  font-size: 30px;
+  margin-bottom: -10px;
+  margin-top: 100px;
   text-align: center;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family: monospace
 }
 
 

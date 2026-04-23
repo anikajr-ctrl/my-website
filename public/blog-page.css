@@ -10,7 +10,7 @@ html, body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: monospace;
 }
 
 a:hover,
@@ -102,26 +102,24 @@ img:hover {
     }
 }
 
-.lined-paper {
-    background-image: url("lined-paper.jpg");
-    background-size: contain;
-    background-repeat: repeat-y;
-    background-position: top center;
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    min-height: 100vh;
-    margin: 20px auto;
-    padding: 20px 50px 60px 60px;
-    border-radius: 10px;
-    box-sizing: border-box;
-    overflow-y: auto;
+.pink-box {
+  width: 100%;
 }
 
 .blog-entry {
-    max-width: 600px;
-    margin: 0 auto;
-    color: rgb(99, 45, 45)
+  background-image: url('pink-box.JPG');
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  background-position: top center;
+  width: 90%;
+  max-width: 800px;
+  margin: 15px auto;
+  padding: 20px 15px;
+  border-radius: 10px;
+  border: 4px solid rgb(255, 126, 169);
+  box-sizing: border-box;
+  color: rgb(99, 45, 45);
+  overflow-wrap: break-word;
 }
 
 .mean-girls {

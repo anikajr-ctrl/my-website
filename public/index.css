@@ -4,6 +4,7 @@ html, body {
   height: 100%;
   overflow-x: hidden;
   background-color: #FADBEF;
+  font-family: monospace;
   cursor: url('pix495.gif'), auto;
   color: #fff;
   text-shadow: 
