@@ -433,7 +433,7 @@ img:hover {
 
 .snake-gif {
   height: auto;  
-  width: 180px;     
+  width: 250px;     
   display: block;      
   margin: 0 auto;
 }
@@ -465,6 +465,13 @@ img:hover {
 .magnolia {
   height: auto;  
   width: 250px;     
+  display: block;      
+  margin: 0 auto;
+}
+
+.rainbow-gif {
+  height: auto;  
+  width: 350px;     
   display: block;      
   margin: 0 auto;
 }
