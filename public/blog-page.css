@@ -82,16 +82,16 @@ img:hover {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    width: 400px;
+    width: 300px;
     height: auto;
     z-index: 1000;
 }
 
 .shroom {
     position: absolute;
-    bottom: 230px;
+    bottom: 10px;
     left: 10px;
-    width: 350px;
+    width: 200px;
     height: auto;
     z-index: 999;
 }
@@ -474,4 +474,28 @@ img:hover {
   width: 350px;     
   display: block;      
   margin: 0 auto;
+}
+
+.hornby-grid {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  overflow-x: auto;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.hornby-grid img {
+  flex: 0 0 auto;
+  width: auto;
+  height: 300px;
+  object-fit: cover;
+  max-width: 350px;
+  transition: transform 0.3s ease;
+}
+
+.hornby-grid img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
