@@ -115,7 +115,7 @@ a:hover,
     top: 50%;
     transform: translateY(-50%);
     font-size: 48px;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(9, 113, 45, 0.8);
     cursor: pointer;
     user-select: none;
     z-index: 10;
@@ -124,7 +124,7 @@ a:hover,
 }
 
 .arrow:hover {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(0, 200, 70, 0.8);
 }
 
 .arrow.left {
@@ -160,7 +160,7 @@ a:hover,
   top: 20px;
   right: 30px;
   font-size: 40px;
-  color: white;
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
