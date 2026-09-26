@@ -506,3 +506,27 @@ img:hover {
   display: block;      
   margin: 0 auto;
 }
+
+.rainbow-grid {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  overflow-x: auto;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.rainbow-grid img {
+  flex: 0 0 auto;
+  width: auto;
+  height: 300px;
+  object-fit: cover;
+  max-width: 350px;
+  transition: transform 0.3s ease;
+}
+
+.rainbow-grid img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
