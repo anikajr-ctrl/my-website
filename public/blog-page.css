@@ -526,11 +526,6 @@ img:hover {
   transition: transform 0.3s ease;
 }
 
-.rainbow-grid img:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
 .djcatgif {
   height: auto;  
   width: 350px;     
