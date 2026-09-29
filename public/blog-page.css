@@ -530,3 +530,10 @@ img:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
+
+.djcatgif {
+  height: auto;  
+  width: 350px;     
+  display: block;      
+  margin: 0 auto;
+}
