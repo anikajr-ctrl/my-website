@@ -159,7 +159,6 @@ img:hover {
     margin: auto;
 }
 
-
 .mushroom-grid {
   display: flex;
   gap: 10px;
@@ -178,12 +177,6 @@ img:hover {
   max-width: 350px;
   transition: transform 0.3s ease;
 }
-
-.mushroom-grid img:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
 
 .cat-aquarium {
   display: block;
@@ -207,25 +200,22 @@ img:hover {
 }
 
 .bog-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   gap: 10px;
+  justify-content: flex-start;
+  overflow-x: auto;
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
   margin: 20px auto;
 }
 
 .bog-grid img {
-  width: 100%;
-  height: auto;
+   flex: 0 0 auto;
+  width: auto;
+  height: 300px;
   object-fit: cover;
-  max-width: 200px;
-  transition: transform 0.3s ease;
-}
-
-.bog-grid img:hover {
-  transform: scale(1.05);
-  cursor: pointer;  
+  max-width: 350px;
+  transition: transform 0.3s ease;;
 }
 
 .lightbox {
@@ -308,11 +298,6 @@ img:hover {
   transition: transform 0.3s ease;
 }
 
-.fisheye-grid img:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
 .foggy-park-grid {
   display: flex;
   gap: 10px;
@@ -331,12 +316,6 @@ img:hover {
   max-width: 350px;
   transition: transform 0.3s ease;
 }
-
-.foggy-park-grid img:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
 
 .room-grid {
   display: flex;
@@ -357,11 +336,6 @@ img:hover {
   transition: transform 0.3s ease;
 }
 
-.room-grid img:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
 .this-weekend-grid {
   display: flex;
   gap: 10px;
@@ -379,11 +353,6 @@ img:hover {
   object-fit: cover;
   max-width: 350px;
   transition: transform 0.3s ease;
-}
-
-.this-weekend-grid img:hover {
-  transform: scale(1.05);
-  cursor: pointer;
 }
 
 .club-penguin-dance {
@@ -426,11 +395,6 @@ img:hover {
   transition: transform 0.3s ease;
 }
 
-.tofino-grid img:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
 .snake-gif {
   height: auto;  
   width: 250px;     
@@ -448,11 +412,6 @@ img:hover {
   width: 40%;
   max-width: 200px;
   height: auto;
-}
-
-.irish-pin-column img:hover {
-  transform: scale(1.05);
-  cursor: pointer;
 }
 
 .chloe-birthday {
@@ -493,11 +452,6 @@ img:hover {
   object-fit: cover;
   max-width: 350px;
   transition: transform 0.3s ease;
-}
-
-.hornby-grid img:hover {
-  transform: scale(1.05);
-  cursor: pointer;
 }
 
 .heron {

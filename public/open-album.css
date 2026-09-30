@@ -105,10 +105,6 @@ a:hover,
     margin-top: 20px;
 }
 
-.page img:hover {
-    transform: scale(1.05);
-}
-
 /*arrows for page flipping*/
 .arrow {
     position: absolute;
@@ -133,7 +129,6 @@ a:hover,
 
 .arrow.right {
     right: 10px;
-
 }
 
 .lightbox {
