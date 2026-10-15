@@ -500,3 +500,17 @@ img:hover {
   display: block;      
   margin: 0 auto;
 }
+
+.stella {
+  height: auto;  
+  width: 300px;     
+  display: block;      
+  margin: 0 auto;
+}
+
+.monkey-favicon {
+  height: auto;  
+  width: 35px;     
+  display: block;      
+  margin: 0 auto;
+}
